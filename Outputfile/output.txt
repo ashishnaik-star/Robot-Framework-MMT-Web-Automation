@@ -1,0 +1,81 @@
+"Flight Details are as Follows"
+AirAsia
+Departure-07:40
+Arrival-08:45
+Cost-₹ 2,304
+Akasa Air
+Departure-10:05
+Arrival-11:25
+Cost-₹ 2,305
+Akasa Air
+Departure-05:50
+Arrival-07:00
+Cost-₹ 2,305
+Akasa Air
+Departure-19:00
+Arrival-20:15
+Cost-₹ 2,305
+IndiGo
+Departure-09:40
+Arrival-13:05
+Cost-₹ 2,949
+Alliance Air
+Departure-09:20
+Arrival-10:45
+Cost-₹ 3,064
+Vistara
+Departure-07:00
+Arrival-08:10
+Cost-₹ 3,337
+Vistara
+Departure-18:30
+Arrival-19:40
+Cost-₹ 3,358
+AirAsia
+Departure-05:45
+Arrival-07:15
+Cost-₹ 3,370
+AirAsia
+Departure-21:00
+Arrival-22:10
+Cost-₹ 2,501
+AirAsia
+Departure-19:50
+Arrival-21:00
+Cost-₹ 2,501
+AirAsia
+Departure-21:45
+Arrival-23:15
+Cost-₹ 2,501
+Akasa Air
+Departure-16:15
+Arrival-17:25
+Cost-₹ 2,502
+Akasa Air
+Departure-21:05
+Arrival-22:20
+Cost-₹ 2,502
+Akasa Air
+Departure-08:00
+Arrival-09:20
+Cost-₹ 2,502
+IndiGo
+Departure-10:40
+Arrival-16:00
+Cost-₹ 3,102
+Alliance Air
+Departure-07:25
+Arrival-08:50
+Cost-₹ 3,218
+Vistara
+Departure-20:20
+Arrival-21:35
+Cost-₹ 3,491
+Vistara
+Departure-08:50
+Arrival-09:55
+Cost-₹ 3,512
+AirAsia
+Departure-11:05
+Arrival-12:15
+Cost-₹ 3,845

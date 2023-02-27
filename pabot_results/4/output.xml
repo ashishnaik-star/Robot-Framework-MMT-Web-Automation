@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.5 on win32)" generated="20230225 18:59:26.404" rpa="false" schemaversion="3">
+<suite id="s1" name="Test One" source="C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Tests\test_one.robot">
+<kw name="Open the base url" library="initialize_resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--disable-extensions");add_argument("--start-maximized")</arg>
+<arg>desired_capabilities={"pageLoadStrategy": "none"}</arg>
+<arg>executable_path=../Webdrivers/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230225 18:59:26.619" level="INFO">Opening browser 'chrome' to base url 'https://www.makemytrip.com/'.</msg>
+<status status="PASS" starttime="20230225 18:59:26.618" endtime="20230225 18:59:30.517"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230225 18:59:30.517" endtime="20230225 18:59:30.526"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>15</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230225 18:59:30.526" endtime="20230225 18:59:30.529"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:33.539" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:30.530" endtime="20230225 18:59:33.539"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:26.617" endtime="20230225 18:59:33.540"/>
+</kw>
+<test id="s1-t1" name="click on travellers and class" line="31">
+<kw name="select travellers class" library="homepage_resource">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:38.550" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:33.541" endtime="20230225 18:59:38.550"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Travellers &amp; Class')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:38.551" level="INFO">Clicking element 'xpath://span[contains(text(),'Travellers &amp; Class')]'.</msg>
+<status status="PASS" starttime="20230225 18:59:38.550" endtime="20230225 18:59:38.672"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://li[@data-cy='adults-2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:38.674" level="INFO">Clicking element 'xpath://li[@data-cy='adults-2']'.</msg>
+<status status="PASS" starttime="20230225 18:59:38.673" endtime="20230225 18:59:38.757"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://li[@data-cy='children-1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:38.759" level="INFO">Clicking element 'xpath://li[@data-cy='children-1']'.</msg>
+<status status="PASS" starttime="20230225 18:59:38.758" endtime="20230225 18:59:38.858"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://li[@data-cy='infants-1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:38.859" level="INFO">Clicking element 'xpath://li[@data-cy='infants-1']'.</msg>
+<status status="PASS" starttime="20230225 18:59:38.858" endtime="20230225 18:59:38.943"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://li[@data-cy='travelClass-1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:38.944" level="INFO">Clicking element 'xpath://li[@data-cy='travelClass-1']'.</msg>
+<status status="PASS" starttime="20230225 18:59:38.944" endtime="20230225 18:59:39.016"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@data-cy='travellerApplyBtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:39.016" level="INFO">Clicking element 'xpath://button[@data-cy='travellerApplyBtn']'.</msg>
+<status status="PASS" starttime="20230225 18:59:39.016" endtime="20230225 18:59:39.080"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:41.095" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:39.080" endtime="20230225 18:59:41.095"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:33.540" endtime="20230225 18:59:41.095"/>
+</kw>
+<kw name="validate the content" library="homepage_resource">
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<arg>css:#travellers</arg>
+<arg>value</arg>
+<arg>1 Infant, 1 Adult, 2 Childrens</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<msg timestamp="20230225 18:59:41.144" level="INFO">Element 'css:#travellers' attribute 'value' contains value '1 Infant, 1 Adult, 2 Childrens'.</msg>
+<status status="PASS" starttime="20230225 18:59:41.096" endtime="20230225 18:59:41.144"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://p[contains(text(),'Premium Economy')]</arg>
+<arg>Premium Economy</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230225 18:59:41.146" level="INFO">Verifying element 'xpath://p[contains(text(),'Premium Economy')]' contains exact text 'Premium Economy'.</msg>
+<status status="PASS" starttime="20230225 18:59:41.145" endtime="20230225 18:59:41.166"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:41.095" endtime="20230225 18:59:41.167"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20230225 18:59:33.540" endtime="20230225 18:59:41.167"/>
+</test>
+<kw name="close all windows" library="initialize_resource" type="TEARDOWN">
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230225 18:59:41.168" endtime="20230225 18:59:41.256"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:41.167" endtime="20230225 18:59:41.257"/>
+</kw>
+<doc>Validation of Login Page contents
+Login to ibibo website
+Enter Valid and Invalid cases</doc>
+<status status="PASS" starttime="20230225 18:59:26.412" endtime="20230225 18:59:41.257"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test One">Test One</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,22 @@
+==============================================================================
+Test One :: Validation of Login Page contents Login to ibibo website Enter ...
+==============================================================================
+close all pop-ups in MMT Page                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Tests\test_one.robot:16
+    T:  close all pop-ups in MMT Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Tests\test_one.robot:18
+      close all pop-ups    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Resource\initialize_resource.robot:23
+      Select Frame    xpath://iframe[@id='webklipper-publisher-widget-container-notification-frame']
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://iframe[@id='webklipper-publisher-widget-container-notification-frame']' not found.
+------------------------------------------------------------------------------
+Test One :: Validation of Login Page contents Login to ibibo websi... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\pabot_results\0\output.xml

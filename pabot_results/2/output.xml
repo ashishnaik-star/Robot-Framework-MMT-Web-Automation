@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.5 on win32)" generated="20230225 18:59:26.381" rpa="false" schemaversion="3">
+<suite id="s1" name="Test One" source="C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Tests\test_one.robot">
+<kw name="Open the base url" library="initialize_resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--disable-extensions");add_argument("--start-maximized")</arg>
+<arg>desired_capabilities={"pageLoadStrategy": "none"}</arg>
+<arg>executable_path=../Webdrivers/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230225 18:59:26.590" level="INFO">Opening browser 'chrome' to base url 'https://www.makemytrip.com/'.</msg>
+<status status="PASS" starttime="20230225 18:59:26.589" endtime="20230225 18:59:31.709"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230225 18:59:31.709" endtime="20230225 18:59:31.713"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>15</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230225 18:59:31.713" endtime="20230225 18:59:31.715"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:34.717" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:31.715" endtime="20230225 18:59:34.717"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:26.588" endtime="20230225 18:59:34.718"/>
+</kw>
+<test id="s1-t1" name="select from and to airports" line="23">
+<kw name="select airports from" library="homepage_resource">
+<arg>BLR</arg>
+<arg>HYD</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:39.724" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:34.719" endtime="20230225 18:59:39.724"/>
+</kw>
+<kw name="close additional windows" library="initialize_resource">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>@{window_titles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230225 18:59:39.726" level="INFO">@{window_titles} = [ CDwindow-D39FB425E353A30AA166D1BB03453AE0 ]</msg>
+<status status="PASS" starttime="20230225 18:59:39.725" endtime="20230225 18:59:39.726"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${length_of_windows}</var>
+<arg>${window_titles}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20230225 18:59:39.727" level="INFO">Length is 1</msg>
+<msg timestamp="20230225 18:59:39.727" level="INFO">${length_of_windows} = 1</msg>
+<status status="PASS" starttime="20230225 18:59:39.726" endtime="20230225 18:59:39.727"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${length_of_windows}'&gt;'1'</arg>
+<arg>run keywords</arg>
+<arg>switch window</arg>
+<arg>index=1</arg>
+<arg>AND</arg>
+<arg>close window</arg>
+<arg>AND</arg>
+<arg>switch window</arg>
+<arg>index=0</arg>
+<arg>ELSE</arg>
+<arg>log</arg>
+<arg>no additional tabs opened</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log" library="BuiltIn">
+<arg>no additional tabs opened</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230225 18:59:39.728" level="INFO">no additional tabs opened</msg>
+<status status="PASS" starttime="20230225 18:59:39.728" endtime="20230225 18:59:39.728"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:39.727" endtime="20230225 18:59:39.728"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:39.724" endtime="20230225 18:59:39.728"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#fromCity</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:39.729" level="INFO">Clicking element 'css:#fromCity'.</msg>
+<status status="PASS" starttime="20230225 18:59:39.728" endtime="20230225 18:59:39.823"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:41.826" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:39.823" endtime="20230225 18:59:41.826"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='From']</arg>
+<arg>${from}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:41.827" level="INFO">Typing text 'BLR' into text field 'xpath://input[@placeholder='From']'.</msg>
+<status status="PASS" starttime="20230225 18:59:41.826" endtime="20230225 18:59:41.890"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:43.902" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:41.891" endtime="20230225 18:59:43.902"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230225 18:59:43.903" level="INFO">Sending key(s) ('DOWN',) to page.</msg>
+<msg timestamp="20230225 18:59:43.903" level="INFO">Pressing special key DOWN to browser.</msg>
+<msg timestamp="20230225 18:59:43.904" level="INFO">Releasing special key DOWN.</msg>
+<status status="PASS" starttime="20230225 18:59:43.902" endtime="20230225 18:59:43.912"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230225 18:59:43.912" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20230225 18:59:43.912" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20230225 18:59:43.912" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230225 18:59:43.912" endtime="20230225 18:59:43.938"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#toCity</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:43.939" level="INFO">Clicking element 'css:#toCity'.</msg>
+<status status="PASS" starttime="20230225 18:59:43.938" endtime="20230225 18:59:44.005"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='To']</arg>
+<arg>${to}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230225 18:59:44.007" level="INFO">Typing text 'HYD' into text field 'xpath://input[@placeholder='To']'.</msg>
+<status status="PASS" starttime="20230225 18:59:44.005" endtime="20230225 18:59:44.064"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:46.073" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:44.064" endtime="20230225 18:59:46.073"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230225 18:59:46.074" level="INFO">Sending key(s) ('DOWN',) to page.</msg>
+<msg timestamp="20230225 18:59:46.074" level="INFO">Pressing special key DOWN to browser.</msg>
+<msg timestamp="20230225 18:59:46.074" level="INFO">Releasing special key DOWN.</msg>
+<status status="PASS" starttime="20230225 18:59:46.073" endtime="20230225 18:59:46.080"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230225 18:59:46.081" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20230225 18:59:46.081" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20230225 18:59:46.081" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230225 18:59:46.080" endtime="20230225 18:59:46.118"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:34.719" endtime="20230225 18:59:46.119"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:34.718" endtime="20230225 18:59:46.119"/>
+</test>
+<kw name="close all windows" library="initialize_resource" type="TEARDOWN">
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230225 18:59:46.120" endtime="20230225 18:59:46.210"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:46.120" endtime="20230225 18:59:46.211"/>
+</kw>
+<doc>Validation of Login Page contents
+Login to ibibo website
+Enter Valid and Invalid cases</doc>
+<status status="PASS" starttime="20230225 18:59:26.389" endtime="20230225 18:59:46.211"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test One">Test One</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.5 on win32)" generated="20230225 18:59:26.390" rpa="false" schemaversion="3">
+<suite id="s1" name="Test One" source="C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Tests\test_one.robot">
+<kw name="Open the base url" library="initialize_resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>browser=chrome</arg>
+<arg>options=add_argument("--disable-extensions");add_argument("--start-maximized")</arg>
+<arg>desired_capabilities={"pageLoadStrategy": "none"}</arg>
+<arg>executable_path=../Webdrivers/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230225 18:59:26.601" level="INFO">Opening browser 'chrome' to base url 'https://www.makemytrip.com/'.</msg>
+<status status="PASS" starttime="20230225 18:59:26.600" endtime="20230225 18:59:31.794"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230225 18:59:31.795" endtime="20230225 18:59:31.796"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>15</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230225 18:59:31.797" endtime="20230225 18:59:31.803"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230225 18:59:34.808" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230225 18:59:31.803" endtime="20230225 18:59:34.808"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:26.599" endtime="20230225 18:59:34.809"/>
+</kw>
+<test id="s1-t1" name="select departure and arrival dates in MMT" line="26">
+<kw name="Create List" library="BuiltIn">
+<var>@{Arrival_date}</var>
+<arg>Sat</arg>
+<arg>May</arg>
+<arg>13</arg>
+<arg>2023</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230225 18:59:34.810" level="INFO">@{Arrival_date} = [ Sat | May | 13 | 2023 ]</msg>
+<status status="PASS" starttime="20230225 18:59:34.809" endtime="20230225 18:59:34.810"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{Departure_date}</var>
+<arg>Tue</arg>
+<arg>May</arg>
+<arg>09</arg>
+<arg>2023</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230225 18:59:34.811" level="INFO">@{Departure_date} = [ Tue | May | 09 | 2023 ]</msg>
+<status status="PASS" starttime="20230225 18:59:34.811" endtime="20230225 18:59:34.811"/>
+</kw>
+<kw name="select departure and arrival dates" library="homepage_resource">
+<arg>${Departure_date}</arg>
+<arg>${Arrival_date}</arg>
+<kw name="Compute Selector" library="Dateselection">
+<arg>${Departure_date}[0]</arg>
+<arg>${Departure_date}[1]</arg>
+<arg>${Departure_date}[2]</arg>
+<arg>${Departure_date}[3]</arg>
+<msg timestamp="20230225 18:59:34.814" level="INFO">Clicking element 'xpath://div[@aria-label='Tue May 09 2023']'.</msg>
+<msg timestamp="20230225 18:59:39.825" level="INFO">Clicking element 'xpath://span[@aria-label='Next Month']'.</msg>
+<msg timestamp="20230225 18:59:44.834" level="INFO">Dates not present/ Input incorrectly</msg>
+<status status="PASS" starttime="20230225 18:59:34.813" endtime="20230225 18:59:44.834"/>
+</kw>
+<kw name="Compute Selector" library="Dateselection">
+<arg>${Arrival_date}[0]</arg>
+<arg>${Arrival_date}[1]</arg>
+<arg>${Arrival_date}[2]</arg>
+<arg>${Arrival_date}[3]</arg>
+<msg timestamp="20230225 18:59:44.835" level="INFO">Clicking element 'xpath://div[@aria-label='Sat May 13 2023']'.</msg>
+<msg timestamp="20230225 18:59:49.878" level="INFO">Clicking element 'xpath://span[@aria-label='Next Month']'.</msg>
+<msg timestamp="20230225 18:59:54.911" level="INFO">Dates not present/ Input incorrectly</msg>
+<status status="PASS" starttime="20230225 18:59:44.835" endtime="20230225 18:59:54.912"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:34.811" endtime="20230225 18:59:54.912"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:34.809" endtime="20230225 18:59:54.912"/>
+</test>
+<kw name="close all windows" library="initialize_resource" type="TEARDOWN">
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230225 18:59:54.913" endtime="20230225 18:59:54.998"/>
+</kw>
+<status status="PASS" starttime="20230225 18:59:54.912" endtime="20230225 18:59:54.998"/>
+</kw>
+<doc>Validation of Login Page contents
+Login to ibibo website
+Enter Valid and Invalid cases</doc>
+<status status="PASS" starttime="20230225 18:59:26.398" endtime="20230225 18:59:54.998"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test One">Test One</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
