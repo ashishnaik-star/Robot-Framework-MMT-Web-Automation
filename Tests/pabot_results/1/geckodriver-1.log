@@ -1,0 +1,22 @@
+1677677479406	geckodriver	INFO	Listening on 127.0.0.1:65178
+1677677482466	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--start-maximized" "--remote-debugging-port" "65179" "-no-remote" "-profile" "C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofile64SCUM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677677482725	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677677482730	Marionette	INFO	Listening on port 65196
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+WebDriver BiDi listening on ws://127.0.0.1:65179
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ashish\\AppData\\Local\\Temp\\rust_mozprofile64SCUM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65179/devtools/browser/cf99e0dc-a4bc-457f-aa50-c67a1861c68d
+JavaScript warning: https://www.makemytrip.com/dwkK4JihDSh_/BX/8QMz-SLmb8/tuJubJLLk75J/Z2soa34n/H01f/LhczZlg, line 1: unreachable code after return statement
+JavaScript error: https://jsak.mmtcdn.com/pwa_v3/flights_thankyou_assets/mmtFlightsThankYouRemoteEntry.js?version=1677677485584, line 1: Error: Container initialization failed as it has already been initialized with a different share scope
+JavaScript warning: https://www.makemytrip.com/dwkK4JihDSh_/BX/8QMz-SLmb8/tuJubJLLk75J/Z2soa34n/H01f/LhczZlg, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.makemytrip.com/dwkK4JihDSh_/BX/8QMz-SLmb8/tuJubJLLk75J/Z2soa34n/H01f/LhczZlg, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677677486730	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1677677506706	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.makemytrip.com/dwkK4JihDSh_/BX/8QMz-SLmb8/tuJubJLLk75J/Z2soa34n/H01f/LhczZlg, line 1: unreachable code after return statement
+JavaScript warning: https://www.makemytrip.com/dwkK4JihDSh_/BX/8QMz-SLmb8/tuJubJLLk75J/Z2soa34n/H01f/LhczZlg, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.makemytrip.com/dwkK4JihDSh_/BX/8QMz-SLmb8/tuJubJLLk75J/Z2soa34n/H01f/LhczZlg, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677677621654	Marionette	INFO	Stopped listening on port 65196
+Dynamically enable window occlusion 1

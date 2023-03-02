@@ -1,0 +1,37 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Test Two :: Validation of Login Page contents search page Login to ib...
+==============================================================================
+close all pop-ups in MMT Page                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\test_two.robot:16
+    T:  close all pop-ups in MMT Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\test_two.robot:17
+      close all pop-ups    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Resource\initialize_resource.robot:25
+      Select Frame    xpath://iframe[@id='webklipper-publisher-widget-container-notification-frame']
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://iframe[@id='webklipper-publisher-widget-container-notification-frame']' not found.
+------------------------------------------------------------------------------
+select round trip in MMT landing Page                                 | PASS |
+------------------------------------------------------------------------------
+select from and to airports                                           | PASS |
+------------------------------------------------------------------------------
+select departure and arrival dates in MMT                             | PASS |
+------------------------------------------------------------------------------
+click on search                                                       | PASS |
+------------------------------------------------------------------------------
+Scrape flight details and store in file                               | PASS |
+------------------------------------------------------------------------------
+Tests.Test Two :: Validation of Login Page contents search page Lo... | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\pabot_results\2\output.xml
