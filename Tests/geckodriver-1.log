@@ -1,0 +1,24 @@
+1677762980981	geckodriver	INFO	Listening on 127.0.0.1:60138
+1677762984038	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-extensions" "--start-maximized" "--remote-debugging-port" "60139" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileR6YW2g"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677762984307	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677762984312	Marionette	INFO	Listening on port 60144
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+WebDriver BiDi listening on ws://127.0.0.1:60139
+1677762984642	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: Failed to initialize GPU process
+[GFX1-]: [D3D11] failed to get compositor device.
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_NO_DEVICE
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Windows\\TEMP\\rust_mozprofileR6YW2g\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60139/devtools/browser/4d3320f9-bf07-4ac7-876e-5712726aa623
+JavaScript warning: https://www.makemytrip.com/p38nO/N0/lz/ZYel/5Au1qTk/7i9SwcQzwO/bUMeQCQ/Www/uYzNodGI, line 1: unreachable code after return statement
+1677762985905	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://www.makemytrip.com/p38nO/N0/lz/ZYel/5Au1qTk/7i9SwcQzwO/bUMeQCQ/Www/uYzNodGI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://jsak.mmtcdn.com/pwa_v3/flights_thankyou_assets/mmtFlightsThankYouRemoteEntry.js?version=1677762985681, line 1: Error: Container initialization failed as it has already been initialized with a different share scope
+JavaScript warning: https://www.makemytrip.com/p38nO/N0/lz/ZYel/5Au1qTk/7i9SwcQzwO/bUMeQCQ/Www/uYzNodGI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677763022352	Marionette	INFO	Stopped listening on port 60144
+Dynamically enable window occlusion 1

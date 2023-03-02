@@ -9,11 +9,13 @@ Library    Collections
 *** Variables ***
 ${url}      https://www.makemytrip.com/
 ${pop_up_one}    css:#webklipper-publisher-widget-container-notification-close-div
+${browser}      chrome
 
 
 *** Keywords ***
 Open the base url
-   open browser    ${url}    browser=chrome     options=add_argument("--disable-extensions");add_argument("--start-maximized")  desired_capabilities={"pageLoadStrategy": "none"}   executable_path=../Webdrivers/chromedriver.exe
+   IF    '${browser}'=='chrome'        open browser    ${url}    browser=${browser}     options=add_argument("--disable-extensions");add_argument("--start-maximized")  desired_capabilities={"pageLoadStrategy": "none"}   executable_path=../Webdrivers/chromedriver.exe
+   ...    ELSE IF    '${browser}'=='firefox'      open browser    ${url}    browser=${browser}     options=add_argument("--disable-extensions");add_argument("--start-maximized")  desired_capabilities={"pageLoadStrategy": "none"}   executable_path=../Webdrivers/geckodriver.exe
    set browser implicit wait    5
    set selenium timeout    15
    sleep    3
@@ -38,7 +40,3 @@ close additional windows
 
 close all windows
     close window
-
-
-
-

@@ -1,0 +1,37 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Test One :: Validation of Login Page contents Login to ibibo website ...
+==============================================================================
+close all pop-ups in MMT Page                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\test_one.robot:16
+    T:  close all pop-ups in MMT Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\test_one.robot:18
+      close all pop-ups    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\Resource\initialize_resource.robot:25
+      Select Frame    xpath://iframe[@id='webklipper-publisher-widget-container-notification-frame']
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://iframe[@id='webklipper-publisher-widget-container-notification-frame']' not found.
+------------------------------------------------------------------------------
+select round trip in MMT landing Page                                 | PASS |
+------------------------------------------------------------------------------
+select from and to airports                                           | PASS |
+------------------------------------------------------------------------------
+select departure and arrival dates in MMT                             | PASS |
+------------------------------------------------------------------------------
+click on travellers and class                                         | PASS |
+------------------------------------------------------------------------------
+click on search                                                       | PASS |
+------------------------------------------------------------------------------
+Tests.Test One :: Validation of Login Page contents Login to ibibo... | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+6 tests, 5 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\pabot_results\0\output.xml

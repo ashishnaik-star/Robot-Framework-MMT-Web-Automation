@@ -1,0 +1,22 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Test Three :: Validation of Login Page contents search page Login to ...
+==============================================================================
+select from and to airports                                           | PASS |
+------------------------------------------------------------------------------
+select departure date                                                 | PASS |
+------------------------------------------------------------------------------
+click on search                                                       | PASS |
+------------------------------------------------------------------------------
+close pop up                                                          | PASS |
+------------------------------------------------------------------------------
+expand and fetch all flights details available one way                | PASS |
+------------------------------------------------------------------------------
+Tests.Test Three :: Validation of Login Page contents search page ... | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Ashish\PycharmProjects\Robot_framework_makemytrip\tests\pabot_results\1\output.xml

@@ -1,8 +1,16 @@
 "Flight Details are as Follows"
 AirAsia
-Departure-07:40
+Departure-06:05
+Arrival-07:15
+Cost-₹ 2,304
+AirAsia
+Departure-07:35
 Arrival-08:45
 Cost-₹ 2,304
+Akasa Air
+Departure-19:00
+Arrival-20:15
+Cost-₹ 2,305
 Akasa Air
 Departure-10:05
 Arrival-11:25
@@ -11,17 +19,25 @@ Akasa Air
 Departure-05:50
 Arrival-07:00
 Cost-₹ 2,305
-Akasa Air
-Departure-19:00
-Arrival-20:15
-Cost-₹ 2,305
+AirAsia
+Departure-14:05
+Arrival-15:15
+Cost-₹ 2,499
+AirAsia
+Departure-13:05
+Arrival-14:10
+Cost-₹ 2,499
+AirAsia
+Departure-15:40
+Arrival-16:50
+Cost-₹ 2,499
 IndiGo
 Departure-09:40
 Arrival-13:05
 Cost-₹ 2,949
 Alliance Air
-Departure-09:20
-Arrival-10:45
+Departure-09:35
+Arrival-11:15
 Cost-₹ 3,064
 Vistara
 Departure-07:00
@@ -31,22 +47,54 @@ Vistara
 Departure-18:30
 Arrival-19:40
 Cost-₹ 3,358
+IndiGo
+Departure-09:20
+Arrival-10:25
+Cost-₹ 3,436
+IndiGo
+Departure-07:25
+Arrival-08:30
+Cost-₹ 3,436
+IndiGo
+Departure-12:40
+Arrival-13:45
+Cost-₹ 3,436
+IndiGo
+Departure-19:00
+Arrival-20:10
+Cost-₹ 3,436
+IndiGo
+Departure-16:10
+Arrival-17:30
+Cost-₹ 3,436
+IndiGo
+Departure-10:10
+Arrival-11:30
+Cost-₹ 3,436
+IndiGo
+Departure-05:15
+Arrival-06:25
+Cost-₹ 3,436
 AirAsia
-Departure-05:45
-Arrival-07:15
-Cost-₹ 3,370
-AirAsia
-Departure-21:00
-Arrival-22:10
-Cost-₹ 2,501
+Departure-21:05
+Arrival-22:15
+Cost-₹ 2,411
 AirAsia
 Departure-19:50
 Arrival-21:00
-Cost-₹ 2,501
+Cost-₹ 2,411
 AirAsia
-Departure-21:45
-Arrival-23:15
-Cost-₹ 2,501
+Departure-19:25
+Arrival-20:40
+Cost-₹ 2,411
+AirAsia
+Departure-14:25
+Arrival-15:35
+Cost-₹ 2,411
+AirAsia
+Departure-11:10
+Arrival-12:25
+Cost-₹ 2,411
 Akasa Air
 Departure-16:15
 Arrival-17:25
@@ -58,24 +106,56 @@ Cost-₹ 2,502
 Akasa Air
 Departure-08:00
 Arrival-09:20
-Cost-₹ 2,502
+Cost-₹ 2,557
 IndiGo
 Departure-10:40
 Arrival-16:00
 Cost-₹ 3,102
 Alliance Air
 Departure-07:25
-Arrival-08:50
+Arrival-09:05
 Cost-₹ 3,218
-Vistara
-Departure-20:20
-Arrival-21:35
-Cost-₹ 3,491
+IndiGo
+Departure-07:15
+Arrival-08:25
+Cost-₹ 3,499
+IndiGo
+Departure-17:55
+Arrival-19:00
+Cost-₹ 3,499
+IndiGo
+Departure-08:30
+Arrival-09:45
+Cost-₹ 3,499
+IndiGo
+Departure-22:50
+Arrival-23:55
+Cost-₹ 3,499
+IndiGo
+Departure-05:40
+Arrival-06:45
+Cost-₹ 3,499
+IndiGo
+Departure-16:55
+Arrival-18:10
+Cost-₹ 3,499
+IndiGo
+Departure-11:45
+Arrival-13:00
+Cost-₹ 3,499
+IndiGo
+Departure-21:00
+Arrival-22:10
+Cost-₹ 3,499
+IndiGo
+Departure-23:55
+Arrival-01:00
+Cost-₹ 3,499
+IndiGo
+Departure-09:15
+Arrival-10:30
+Cost-₹ 3,499
 Vistara
 Departure-08:50
 Arrival-09:55
 Cost-₹ 3,512
-AirAsia
-Departure-11:05
-Arrival-12:15
-Cost-₹ 3,845
